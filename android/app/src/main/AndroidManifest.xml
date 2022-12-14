@@ -3,6 +3,8 @@
    <application
         android:label="prueba_tecnica"
         android:icon="@mipmap/ic_launcher">
+
+         
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -37,5 +39,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+          <!-- Required to fetch data from the internet. -->
+       
+
     </application>
 </manifest>
