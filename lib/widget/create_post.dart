@@ -31,7 +31,7 @@ class _CreatePostState extends State<CreatePost> {
               _formTitle(),
               _formBody(),
               _formUserId(),
-              SizedBox(height: 20),
+              Expanded(child: Container()),
               _formButton(context),
             ],
           ),
@@ -131,7 +131,13 @@ class _CreatePostState extends State<CreatePost> {
           Navigator.pop(context);
         }
       },
-      child: const Text('Submit'),
+      child:
+      //alinear el texto del boton al centro y abajo,
+      //para que se vea mas centrado
+      const Align(
+        alignment: Alignment.center,
+        child: Text('Create Post'),
+      ),
     );
   }
 }
