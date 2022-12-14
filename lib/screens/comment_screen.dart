@@ -12,7 +12,7 @@ class CommentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Comentarios del post $postId'),
+        title: Text(' Comments on post $postId'),
       ),
       body: FutureBuilder(
         future: apiService.getCommentsByPostId(postId),
